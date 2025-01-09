@@ -55,6 +55,7 @@
     font: var(--h2);
     color: var(--text-primary);
   }
+  /* O seletor nth-child conta todos os elementos filhos do pai, não apenas os de um tipo específico. Os <p> são o primeiro e o quarto filhos da <div class="city">. Por isso, para selecionar o segundo <p>, preciso usar nth-child(4). */
   & > p:nth-child(1) {
     font: var(--headline);
     color: var(--text-headline);
