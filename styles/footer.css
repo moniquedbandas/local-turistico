@@ -1,0 +1,7 @@
+footer {
+  & p {
+    font: var(--paragraph);
+    color: var(--text-secondary);
+    text-align: center;
+  }
+}

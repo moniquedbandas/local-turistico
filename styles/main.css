@@ -6,6 +6,7 @@
     object-fit: cover;
     border-radius: 28px;
     align-self: center;
+    /* align-self center para que nos mobiles ela fique centralizada. */
   }
 }
 .city {
@@ -28,26 +29,6 @@
     text-align: center;
     margin-top: 24px;
   }
-  /* & img {
-    width: 330px;
-    height: 330px;
-    object-fit: cover;
-    border-radius: 28px;
-    align-self: center; */
-  /* align-self center para que nos mobiles ela fique centralizada. */
-  /* } */
-}
-.gap-top {
-  margin-top: 40px;
-}
-.gap-64 {
-  margin: 64px auto;
-}
-.divider {
-  width: 100%;
-  height: 1px;
-  margin: 36px 0;
-  background-color: var(--border-primary);
 }
 
 .description {
@@ -71,6 +52,34 @@
 .location {
   display: flex;
   flex-direction: column;
+  & h3 {
+    font: var(--h3);
+    color: var(--text-primary);
+    margin-top: 20px;
+  }
+  & p {
+    font: var(--paragraph);
+    color: var(--text-secondary);
+  }
+  & ul {
+    margin: 1rem 0;
+    font: var(--headline);
+    color: var(--text-secondary);
+  }
+  & ul li {
+    color: var(--accent-blue);
+    margin-left: 28px;
+  }
+  & ul:nth-of-type(3) li:nth-of-type(1) {
+    color: var(--accent-purple);
+    /* aqui eu procurei o meu terceiro ul e mudei a cor do primeiro li dele. senao fizer isso, a cor do primeiro li fica igual a dos outros li dos outros ul */
+  }
+  & ul li:nth-child(2) {
+    color: var(--accent-pink);
+  }
+  & ul li:nth-child(3) {
+    color: var(--accent-orange);
+  }
 }
 
 @media (min-width: 80rem) {
